@@ -4,6 +4,7 @@
   "description": "A PDF to Markdown Converter",
   "main": "main.js",
   "scripts": {
+    "ms:serve":"./node_modules/.bin/webpack-dev-server --host u.metasynt.com",
     "watch": "webpack -d --watch",
     "build": "webpack",
     "start": "webpack-dev-server",
