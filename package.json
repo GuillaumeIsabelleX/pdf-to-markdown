@@ -5,9 +5,11 @@
   "main": "main.js",
   "scripts": {
     "ms:serve":"./node_modules/.bin/webpack-dev-server --host u.metasynt.com",
+    "ms:serve:ip":"./node_modules/.bin/webpack-dev-server --host 192.168.1.139",
     "watch": "webpack -d --watch",
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "echo Starting Server with IP ;npm run ms:serve:ip",
+    "start-ori": "webpack-dev-server",
     "lint": "eslint src --ext .js --ext .jsx --cache",
     "test": "NODE_ENV=testing mocha --compilers js:babel-core/register test --recursive",
     "check": "npm run lint && npm run test",
